@@ -1,0 +1,132 @@
+$section-bg: #f8f8fb;
+$a-color: #10ac84;
+$b-color: #f2c94c;
+$c-color: #f2994a;
+$a2-color: #eb5757;
+$titleone-color: #263048;
+$txtone-color: #333333;
+$line-color: #d3dee8;
+$titletwo-color: #2a2c30;
+$buttonbg-color: #162a41;
+$buttonhover-color: #334155;
+$white-color: #fff;
+
+span {
+  text-transform: capitalize;
+}
+
+.apartmentsforsale {
+  padding: 5rem 0;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  &__title {
+    color: $titleone-color;
+    text-transform: capitalize;
+    font-size: 38px;
+    font-family: "roboto";
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  &__txt {
+    color: $txtone-color;
+    font-size: 1.8rem;
+    font-family: "roboto";
+    text-align: center;
+    margin-bottom: 5rem;
+    width: 100%;
+    line-height: 3rem;
+    max-width: 646px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 3rem;
+  }
+
+  &__card {
+    width: 540px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .apartmentsforsale__details {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem;
+
+      .apartmentsforsale__location {
+        margin-bottom: 1rem;
+
+        &-title {
+          color: $titletwo-color;
+          font-weight: bold;
+          font-family: "roboto";
+          font-size: 2rem;
+          a {
+            color: $titletwo-color;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .apartmentsforsale__post,
+        .apartmentsforsale__expenditure {
+          color: $txtone-color;
+          font-size: 1.6rem;
+          font-family: "roboto";
+          margin-top: 1rem;
+        }
+
+        .apartmentsforsale__villa {
+          font-weight: bold;
+        }
+      }
+
+      .apartmentsforsale__stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+        font-family: "roboto";
+
+        .apartmentsforsale__energylabel {
+          color: $white-color;
+          font-size: 2rem;
+          font-weight: 500;
+          padding: 0 1rem;
+          line-height: 3rem;
+          margin-right: 1.5rem;
+          background-color: $a-color;
+        }
+
+        .apartmentsforsale__rooms {
+          color: $txtone-color;
+          font-size: 1.6rem;
+        }
+
+        .apartmentsforsale__price {
+          color: $txtone-color;
+          font-size: 2rem;
+          font-weight: bold;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+}

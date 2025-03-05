@@ -1,0 +1,90 @@
+// Root variables
+:root {
+  --section-bg: #f8f8fb;
+  --a-color: #10ac84;
+  --b-color: #f2c94c;
+  --c-color: #f2994a;
+  --a2-color: #eb5757;
+  --titleone-color: #263048;
+  --txtone-color: #333333;
+  --line-color: #d3dee8;
+  --titletwo-color: #2a2c30;
+  --buttonbg-color: #162a41;
+  --white-color: #fff;
+  --overlay-bg: rgba(69, 84, 99, 0.9);
+  --font-primary: "Roboto", sans-serif;
+}
+
+.nyhedsbrev {
+  width: 100%;
+  margin: 0 auto;
+  background: url("/nyhedsbrev.png") center/cover no-repeat;
+  padding: 40px 20px;
+  position: relative;
+  font-family: var(--font-primary);
+
+  &__wrapper {
+    max-width: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--white-color);
+    width: 100%;
+    gap: 2.5rem;
+    z-index: 2;
+  }
+
+  &__text {
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold;
+    max-width: 500px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    background: var(--white-color);
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  &__input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    font-size: 1.8rem;
+  }
+
+  &__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--buttonbg-color);
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nyhedsbrev::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-bg);
+}

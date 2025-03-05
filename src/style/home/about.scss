@@ -1,0 +1,146 @@
+$title-color: #263048;
+$icon-color: #162a41;
+$txt-color: #333333;
+$icon-bg-color: #eef7ff;
+$num-color: #2a2c30;
+$line-color: #d3dee8;
+
+// about section
+
+// span
+span {
+  text-transform: capitalize;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  &__txt {
+    font-family: "roboto", sans-serif;
+  }
+
+  &__content {
+    display: flex;
+    gap: 10rem;
+  }
+
+  &__div {
+    width: 540px;
+  }
+  &__img {
+    width: 477px;
+    height: 502px;
+  }
+
+  &__title {
+    font-size: 38px;
+    color: $title-color;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &__title-two {
+    font-size: 24px;
+    color: $icon-color;
+    font-family: "Roboto", sans-serif;
+    margin-top: 1.5rem;
+  }
+
+  &__txt-about {
+    font-size: 18px;
+    color: $txt-color;
+    font-family: "Open Sans", sans-serif;
+    margin-top: 1.5rem;
+  }
+
+  // fun fact icons
+
+  &__funfact {
+    display: flex;
+    gap: 20rem;
+    margin-top: 5rem;
+  }
+
+  &__sold {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__txt {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__icon-one {
+    font-size: 40px;
+    color: $icon-color;
+  }
+  &__icon-div {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    background-color: $icon-bg-color;
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title-three {
+    font-size: 24px;
+    color: $num-color;
+    font-family: "Roboto", sans-serif;
+  }
+
+  // line
+
+  &__line {
+    width: 1110px;
+    height: 1px;
+    background-color: $line-color;
+    margin-top: 5rem;
+  }
+
+  // features
+
+  &__feature {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 5rem;
+    width: 1110px;
+  }
+
+  &__features {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__txt-div {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+  }
+
+  &__icon {
+    font-size: 30px;
+    color: $icon-color;
+  }
+
+  &__feature-icon {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: $icon-bg-color;
+  }
+
+  &__txt-feature {
+    font-size: 20px;
+    color: $txt-color;
+    font-family: "Roboto", sans-serif;
+    margin-top: 1rem;
+  }
+}

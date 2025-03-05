@@ -1,0 +1,213 @@
+$bg-color: #fff;
+$text-color: #333;
+$primary-color: #162a41;
+$border-color: #d3dee8;
+
+.kontakt {
+  background-color: $bg-color;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+
+  &__wrapper {
+    max-width: 1080px;
+    margin: 12rem auto;
+  }
+
+  &__header {
+    h2 {
+      position: relative;
+      color: $text-color;
+      margin-bottom: 4rem;
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 4.2rem;
+      text-align: left;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 11%;
+        height: 4px;
+        background-color: $primary-color;
+        margin-top: 8px;
+        position: absolute;
+        left: 0%;
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      text-align: left;
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      max-width: 635px;
+      padding: 4rem;
+      background: $bg-color;
+      border-radius: 4px;
+      border: 1px solid $border-color;
+
+      &__groupped {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        width: 100%;
+      }
+
+      &__group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 15px;
+
+        p {
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 2.4rem;
+          color: $text-color;
+          margin-top: 0.5rem;
+          text-align: left;
+          opacity: 0.7;
+        }
+        label {
+          font-weight: 400;
+          margin-bottom: 0.5rem;
+          color: $text-color;
+          text-align: left;
+          line-height: 3rem;
+          font-size: 1.8rem;
+        }
+
+        input,
+        textarea {
+          padding: 1.5rem;
+          border: 1px solid $border-color;
+          border-radius: 2px;
+          outline: none;
+          font-size: 1.8rem;
+          line-height: 3rem;
+          resize: none;
+        }
+      }
+
+      &__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        margin-bottom: 3.2rem;
+
+        input {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 2.8rem;
+          height: 2.8rem;
+          border: 1.5px solid $border-color;
+          border-radius: 2px;
+          appearance: none;
+          background-color: $bg-color;
+          cursor: pointer;
+          position: relative;
+
+          &:checked {
+            background-color: #0075ff;
+            border-color: #0075ff;
+          }
+
+          &:checked::after {
+            content: "✔";
+            color: $bg-color;
+            font-size: 1.8rem;
+            font-weight: bold;
+            position: absolute;
+          }
+        }
+      }
+
+      &__btn {
+        background: $primary-color;
+        color: $bg-color;
+        border: none;
+        padding: 1.6rem 3.2rem;
+        border-radius: 2px;
+        font-size: 1.8rem;
+        cursor: pointer;
+
+        &:hover {
+          background: $primary-color;
+        }
+      }
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      max-width: 445px;
+      gap: 20px;
+      padding: 3.1rem;
+      border: 1px solid $border-color;
+      border-radius: 3px;
+
+      hr {
+        border: 1.5px solid #d3dee8;
+      }
+
+      &__box {
+        background: $bg-color;
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+
+        &__icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+          height: 50px;
+          background-color: $primary-color;
+          border-radius: 50%;
+          color: $bg-color;
+          font-size: 2rem;
+          margin: 0 auto 1.5rem;
+        }
+
+        h3 {
+          font-weight: 500;
+          font-size: 2rem;
+          line-height: 3rem;
+          margin-bottom: 1.5rem;
+          color: $text-color;
+        }
+
+        a {
+          font-weight: 400;
+          font-size: 1.8rem;
+          color: $text-color;
+          line-height: 3rem;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

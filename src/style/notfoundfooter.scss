@@ -1,0 +1,114 @@
+// variables
+$footer-bg: #25517a;
+$title-color: #fff;
+$txt-color: #d5e0ea;
+
+// styling
+.notfound-footer {
+  background-color: $footer-bg;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 108rem;
+    margin: auto;
+    padding: 10rem 2rem;
+    gap: 2rem;
+  }
+
+  &__section {
+    flex: 1;
+    margin: 0 1.5rem;
+  }
+
+  &__logo {
+    font-size: 2.8rem;
+    font-family: "roboto";
+    color: $title-color;
+    font-weight: 500;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    font-family: "roboto";
+    margin: 2.4rem 0;
+    color: $txt-color;
+    line-height: 3rem;
+    font-weight: 400;
+  }
+
+  &__business-hours-title {
+    font-size: 2rem;
+    color: $txt-color;
+    font-family: "roboto";
+    margin-top: 2rem;
+  }
+
+  &__business-hours-txt {
+    font-size: 1.8rem;
+    color: $txt-color;
+    font-family: "roboto";
+    margin-top: 1rem;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    color: $title-color;
+    font-family: "roboto";
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    color: $txt-color;
+    font-family: "roboto";
+    font-size: 1.8rem;
+  }
+
+  &__item {
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    color: $txt-color;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1.8rem;
+    font-family: "roboto";
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &:hover {
+      color: $title-color;
+    }
+  }
+
+  &__images {
+    display: grid;
+    width: 25.4rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  &__image {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+  }
+
+  &__bottom {
+    text-align: center;
+    padding: 2.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 108rem;
+    margin: 0 auto;
+  }
+
+  &__copyright {
+    font-size: 1.8rem;
+    color: $txt-color;
+    font-family: "roboto";
+  }
+}

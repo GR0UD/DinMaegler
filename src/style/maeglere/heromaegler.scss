@@ -1,0 +1,32 @@
+// variables
+$txt-color: #fff;
+
+.heromaegler-section {
+    
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    &__overlay {
+    background: url("./maeglerhero.png") no-repeat bottom center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+    z-index: -1;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'roboto';
+        font-size: 60px;
+        color: $txt-color;
+    }
+}

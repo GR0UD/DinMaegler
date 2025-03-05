@@ -1,0 +1,51 @@
+// variables
+$txt-color: #fff;
+$span-color: #162A41;
+$shape-color: #a2aeb7;
+
+.registerhero-section {
+    
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    &__overlay {
+    background: url("./maeglerhero.png") no-repeat bottom center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+    z-index: -1;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'roboto';
+        font-size: 24px;
+        color: $txt-color;
+    }
+
+    &__p {
+        margin-top: 3rem;
+        font-family: 'roboto';
+        font-size: 18px;
+        color: $txt-color;
+    }
+
+    &__span {
+        color: $span-color;
+    }
+
+    &__shape {
+        color: $shape-color;
+    }
+
+}

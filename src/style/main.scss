@@ -1,0 +1,26 @@
+@use "./home/hero.scss";
+@use "./home//about.scss";
+@use "./naviagation.scss";
+@use "./home/apartments.scss";
+@use "./boliger/boligerhero.scss";
+@use "./boliger/boligsearch.scss";
+@use "./boliger/boligertilsalg.scss";
+@use "./maeglere/agentsmaegler.scss";
+@use "./maeglere/heromaegler.scss";
+@use "./kontakt/kontakt.scss";
+@use "./login/loginhero.scss";
+@use "./login/loginform.scss";
+@use "./register/registerhero.scss";
+@use "./notfoundfooter.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}

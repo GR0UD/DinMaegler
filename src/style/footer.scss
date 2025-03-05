@@ -1,0 +1,175 @@
+.footer {
+  position: relative;
+  background-color: white;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: #f8f8fb;
+    pointer-events: none;
+    z-index: 0;
+  }
+  &__wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 7rem 0;
+    font-family: "Roboto", sans-serif;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__brand {
+    width: 100%;
+    margin-bottom: 6rem;
+
+    img {
+      width: 300px;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: #444;
+      line-height: 1.6;
+      max-width: 700px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 12.6rem;
+  }
+
+  &__contact {
+    background: white;
+    padding: 5rem;
+    border-radius: 4px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    max-width: 444px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+
+      small {
+        display: block;
+        font-weight: 400;
+        font-size: 1.2rem;
+        color: #7b7b7b;
+        line-height: 2rem;
+      }
+
+      a,
+      span {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 3rem;
+        color: #333333;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      color: #333333;
+    }
+  }
+
+  &__icon {
+    padding: 2rem;
+    background-color: #0d2940;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    svg {
+      font-size: 2.7rem;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      div {
+        display: flex;
+        gap: 1.5rem;
+        margin-bottom: 1.6rem;
+        font-size: 2.4rem;
+        font-weight: 500;
+        line-height: 3.2rem;
+      }
+      li,
+      a {
+        font-size: 1.8rem;
+        color: #333333;
+        cursor: pointer;
+        transition: color 0.3s;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__membership {
+    margin-bottom: 1rem;
+    color: #7b7b7b;
+
+    small {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+
+    &-name {
+      font-size: 3.8rem;
+      font-weight: 700;
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    &-org {
+      font-size: 1.6rem;
+      line-height: 2.8rem;
+    }
+  }
+
+  &__bottom {
+    background-color: #0d2940;
+    text-align: center;
+    padding: 3rem;
+    color: white;
+    font-size: 1.8rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+}

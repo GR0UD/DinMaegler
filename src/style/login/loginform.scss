@@ -1,0 +1,141 @@
+// variables
+$title-color: #2A2C30;
+$white-color: #fff;
+$label-color: #333333;
+$input-color: #7B7B7B;
+$border-color: #D3DEE8;
+$button-bg-color: #162A41;
+$facebook-color: #3B5999;
+$google-color: #DD4B39;
+$register-color: #2F80ED;
+
+// styling
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    background-color: $white-color;
+
+    &__form {
+        background: $white-color;
+        padding: 7rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        border: 1px solid #d3dee8;
+    }
+
+    &__title {
+        margin-bottom: 5rem;
+        font-size: 30px;
+        color: $title-color;    
+        font-family: 'roboto';
+        
+    }
+
+
+
+    &__input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    &__label {
+        text-align: left;
+        font-size: 18px;
+        color: $label-color;
+        margin-bottom: 0.5rem;
+        font-family: 'roboto';
+        width: 540px;
+    }
+
+    &__input {
+        padding: 0.75rem;
+        margin-bottom: 2rem;
+        border: 1px solid $border-color;
+        color: $input-color;
+        border-radius: 2px;
+        font-size: 18px;
+        outline: none;
+        height: 60px;
+    }
+
+    &__submit {
+        background: $button-bg-color;
+        color: $white-color;
+        padding: 0.75rem;
+        font-size: 20px;
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 1rem;
+        transition: background 0.3s;
+        height: 60px;
+
+        &:hover {
+            background: #1b2a4a;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+
+    &__methods {
+        font-size: 18px;
+        color: $label-color;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        font-family: 'roboto';
+        text-align: left;
+    }
+
+    &__social-button {
+        flex: 1;
+        padding: 0.75rem;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+        color: $white-color;
+        margin: 0 0.25rem;
+        transition: opacity 0.3s;
+        height: 60px;
+        &--google {
+            background: $google-color;
+        }
+
+        &--facebook {
+            background: $facebook-color;
+        }
+
+        &--twitter {
+            background: $button-bg-color;
+        }
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__register {
+        margin-top: 1rem;
+        font-size: 18px;
+        font-family: 'roboto';
+        margin-top: 3rem;
+        &-link {
+            color: $register-color;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+ 
